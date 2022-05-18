@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    margin: 20px;
+    height: 60px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgray;
+    align-items: center;
+}
+
+.left {
+    font-size: 50px;
+}
+
+.mid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    color: rgb(31, 28, 28);
+    background-color: rgb(77, 207, 68);
+    height: 60px;
+    padding: 0 20px;
+    border: 1px solid black;
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px 2px black;
+}
+
+.shoes, .glasses, .t-shirts {
+    cursor: pointer;
+    padding: 5px;
+    transition: 0.4s linear;
+}
+
+.right {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 50px;
+}
+
+.right-r, .left {
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.right-r:hover, .left:hover {
+    font-size: 60px;
+}
+
+.shoes:hover, .glasses:hover, .t-shirts:hover {
+    color: palevioletred;
+    background-color: rgb(46, 39, 177);
+} 
+
+@media (max-width:750px) {
+    nav {
+        margin-top: 50px;
+    }
+
+    .mid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        height: 140px;
+        transform: translateY(px);
+    }
+
+    .left, .right {
+        font-size: 30px;
+    }
+
+    .right-r:hover, .left:hover {
+        font-size: 45px;
+    }
+}
